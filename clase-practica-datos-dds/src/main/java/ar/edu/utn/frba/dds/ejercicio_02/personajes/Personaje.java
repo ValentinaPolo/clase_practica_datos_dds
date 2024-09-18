@@ -1,5 +1,6 @@
 package ar.edu.utn.frba.dds.ejercicio_02.personajes;
 
+import ar.edu.utn.frba.dds.ejercicio_02.Converters.ElementoDefensorConverter;
 import ar.edu.utn.frba.dds.ejercicio_02.elementos.ElementoDefensor;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,18 +16,20 @@ public class Personaje {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
   @Getter
-  @Convert(converter = ElementoDefensor.class)
-  @Column
   @ElementCollection
+  @CollectionTable(name = "ElementoDefensor")
+  @Convert(converter = ElementoDefensorConverter.class)
+  @Column(name = "elemento_defensor")
   private List<ElementoDefensor> elementos;
 
   @Getter @Setter
-  @Column
+  @Column(name = "estamina")
   private Integer estamina;
 
   @Getter @Setter
-  @Column
+  @Column(name = "puntos_de_vida")
   private Integer puntosDeVida;
 
   public Personaje(){

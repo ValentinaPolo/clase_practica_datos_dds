@@ -12,17 +12,18 @@
         <properties>
             <property name="hibernate.archive.autodetection" value="class"/>
 
-           <!-- <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/clase_practica_datos_dds?serverTimezone=America/Argentina/Buenos_Aires" />
+           <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/perej" />
             <property name="hibernate.connection.username" value="root" />
-            <property name="hibernate.connection.password" value="root" />-->
+            <property name="hibernate.connection.password" value="1234" />
 
+            <!--
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/clase_practica_datos_dds" />
             <property name="hibernate.connection.username" value="lab_rojo" />
             <property name="hibernate.connection.password" value="1234" />
-
+            !-->
 
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>

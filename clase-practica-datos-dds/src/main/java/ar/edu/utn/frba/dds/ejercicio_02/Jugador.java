@@ -17,11 +17,11 @@ public class Jugador {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-  @Column
+  @Column(name = "nombre")
   private String nombre;
-  @Column
+  @Column(name = "apellido")
   private String apellido;
-  @Column
+  @Column(name = "fecha_alta")
   private LocalDate fechaAlta;
   @ManyToOne
   @JoinColumn(referencedColumnName = "id")

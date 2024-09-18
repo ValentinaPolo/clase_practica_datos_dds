@@ -10,9 +10,9 @@ import javax.persistence.DiscriminatorValue;
 @Setter
 @DiscriminatorValue("ladron")
 public class Ladron extends Personaje{
-  @Column
+  @Column(name = "nivel_siniestro")
   private Integer nivelSiniestro;
-  @Column
+  @Column(name = "tiene_navaja")
   private Boolean tieneNavaja;
 
   public void atacar(Personaje personaje) {
